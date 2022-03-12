@@ -160,11 +160,11 @@ Default password -> admin
 
 ***************************************************************************************************************************************
 
-To capture Google Compute Engine instances automatically. (useful for MIG)
+To capture Google Compute Engine instances automatically. (useful for MIG i.e. Managed Instance Group)
 
 Requirement: GCP Service Account key with Role Viewer.
 Add the key file in /etc/prometheus/ folder
-Rename the file to application_default_credentials.json
+Rename the file to application_default_credentials.json (or give any file name)
 
 Add the following in /etc/prometheus/prometheus.yml file in "scrape_configs" section
 - job_name: '<any-name>'
